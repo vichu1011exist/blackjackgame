@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+ }
+
+
+        .btn{
+          /* border: 2px solid green ; */
+          padding:10px 20px;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          font-weight:bolder;
+          font-size: 16px;
+          }
+      
+        /* primary known as blue */
+          .btn-primary{  
+            background-color: #0059ff;
+          }
+      
+          /* red button */
+          .btn-danger{
+             background-color: red;
+          }
+      
+          .btn-success{
+              background-color: green;
+          }
+      
+          .btn-warning{
+              background-color: yellow;
+              color: black;
+          }         
+
+       /* giving flex box's effect to all main containers  */
+       .container {
+        padding-top: 10px;
+        width: 75%;
+        margin: 0 auto;
+        border: 1px solid black;
+        text-align: center;
+       }
+
+ /* giving flex box's effect to all flex containers  */
+  .flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 1rem 1.5rem;
+  }
+
+  .flex-container div{
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    align-items: center;
+  }
+
+
+  
+ /* Challenge 5 : BlackJack Game */
+
+ .flex-blackjack-row-1, .flex-blackjack-row-2{
+  /* giving the green background to row 1 and row 2 */
+  background: url('images/blackJack-bg.jpg');
+  color: #fff;
+ }
+
+/* adjusting the both row 1's div */
+ .flex-blackjack-row-1 div{
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1;
+  text-align: center; 
+  height: 400px;
+ }
+
+.flex-blackjack-row-1 img{
+  width: 25%;
+  padding: 20px;
+ }
+
+.flex-blackjack-row-2 {
+ 
+  align-items: center;
+  height: 100px;
+ border: 1px solid black;
+}
+
+th,td{
+ border: 1px solid black;
+ padding: 5px;
+}
+
+
+
+    /* for mobile version */
+    @media only screen and (max-width: 1080px) {
+      .container {
+       width: 100%;
+      }
+
+      .flex-blackjack-row-1 img{
+        width: 50%;
+        padding: 15px;
+       }
+
+        #dealer-box img{
+        width: 35%;
+       }
+
+       #your-box img{
+        width: 35%;
+       }
+    }
